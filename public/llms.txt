@@ -1,0 +1,54 @@
+# Golax India Pvt Ltd
+
+> India-based IT company offering web development, software development, mobile apps, digital marketing, SEO and IT consulting — serving 25+ cities across India and clients in 12+ countries (US, UK, Canada, Australia, UAE, Singapore, Germany, New Zealand, Qatar, Saudi Arabia). Headquartered in Patna, Bihar.
+
+Contact: +91 94700 24607 · contact@golaxindia.com · Sneh Highway Views, Bypass Rd, Kankarbagh, Patna 800020, India.
+
+## Company
+
+- [Home](/): Overview — India's trusted IT partner for web, apps, software and digital marketing.
+- [About](/about): Company history, team, mission — founded 2014 in Patna, serving India and globally.
+- [Industries](/industries): Healthcare, education, retail, manufacturing, finance and more.
+- [Portfolio](/portfolio): Projects and case studies across India.
+- [Careers](/careers): Open roles in development, design and marketing.
+- [Contact](/contact): Phone, WhatsApp, email or form — free consultation.
+
+## Services
+
+- [All Services](/services): Full IT services for India and international clients.
+- [Web Development](/services/web-development): Websites, e-commerce, web apps — React, Next.js, WordPress.
+- [Software Development](/services/software-development): ERP, CRM, SaaS, custom enterprise software.
+- [Mobile App Development](/services/mobile-app-development): iOS, Android, Flutter, React Native.
+- [Digital Marketing](/services/digital-marketing): SEO, Google Ads, social media, content marketing.
+- [IT Consulting](/services/it-consulting): Cloud migration, DevOps, cybersecurity, managed IT.
+
+## India Locations
+
+- [All Locations](/locations): India cities, Bihar districts, Patna areas, and global offshore pages.
+- [Delhi](/locations/delhi): IT services in Delhi, NCR.
+- [Mumbai](/locations/mumbai): IT services in Mumbai, Maharashtra.
+- [Bangalore](/locations/bangalore): IT services in Bangalore, Karnataka.
+- [Hyderabad](/locations/hyderabad): IT services in Hyderabad, Telangana.
+- [Chennai](/locations/chennai): IT services in Chennai, Tamil Nadu.
+- [Kolkata](/locations/kolkata): IT services in Kolkata, West Bengal.
+- [Pune](/locations/pune): IT services in Pune, Maharashtra.
+- [Patna](/locations/patna): IT company in Patna, Bihar (headquarters).
+
+## International / Offshore
+
+- [United States](/locations/global/united-states): Offshore web & software development for US businesses.
+- [United Kingdom](/locations/global/united-kingdom): Offshore IT partner for UK companies.
+- [Canada](/locations/global/canada): Offshore development for Canadian clients.
+- [Australia](/locations/global/australia): IT services for Australian businesses.
+- [UAE](/locations/global/united-arab-emirates): IT services for UAE and Middle East clients.
+
+## Blog
+
+- [Blog](/blog): Web development, SEO, mobile apps, cloud and digital marketing insights for Indian businesses.
+
+## Optional
+
+- [Sitemap](/sitemap): Full page index.
+- [XML Sitemap](/sitemap.xml): Machine-readable sitemap for search engines.
+- [Privacy Policy](/legal/privacy-policy)
+- [Terms of Service](/legal/terms-of-service)
