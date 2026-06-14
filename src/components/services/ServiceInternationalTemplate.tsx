@@ -131,7 +131,7 @@ export default function ServiceInternationalTemplate({ data }: Props) {
           }} />
 
       {/* Hero */}
-      <section className="hero-premium py-20 overflow-hidden lg:overflow-visible">
+      <section className="hero-premium py-20 overflow-hidden">
         <div className="hero-premium-orb hero-premium-orb-accent" aria-hidden />
         <div className="hero-premium-orb hero-premium-orb-primary" aria-hidden />
         <div className="container mx-auto px-4 relative z-10">

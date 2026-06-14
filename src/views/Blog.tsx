@@ -207,7 +207,7 @@ export default function Blog() {
     <Layout>
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-hero overflow-hidden lg:overflow-visible">
+      <section className="relative py-20 bg-gradient-hero overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-72 h-72 bg-accent rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-primary-foreground rounded-full blur-3xl" />
@@ -253,9 +253,9 @@ export default function Blog() {
       </section>
 
       {/* Trending Topics */}
-      <section className="py-8 bg-card border-b border-border">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-4 overflow-x-auto pb-2">
+      <section className="py-8 bg-card border-b border-border overflow-hidden">
+        <div className="container mx-auto px-4 min-w-0">
+          <div className="flex items-center gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             <span className="flex items-center gap-2 text-sm font-medium text-foreground whitespace-nowrap">
               <TrendingUp className="h-4 w-4 text-accent" />
               Trending:

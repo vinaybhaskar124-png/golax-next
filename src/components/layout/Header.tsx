@@ -36,9 +36,17 @@ export default function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
-    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
+    const root = document.documentElement;
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      root.style.overflowX = "clip";
+    } else {
+      document.body.style.overflow = "";
+      root.style.overflowX = "";
+    }
     return () => {
       document.body.style.overflow = "";
+      root.style.overflowX = "";
     };
   }, [mobileMenuOpen]);
 
@@ -204,7 +212,7 @@ export default function Header() {
         {mobileMenuOpen && (
           <>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/50 z-[60] lg:hidden" onClick={() => setMobileMenuOpen(false)} aria-hidden="true" />
-            <motion.div initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }} transition={{ type: "spring", damping: 28, stiffness: 320 }} className="fixed top-0 right-0 bottom-0 w-[min(100vw,320px)] z-[70] bg-card shadow-2xl flex flex-col lg:hidden pt-[env(safe-area-inset-top)]" role="dialog" aria-modal="true" aria-label="Navigation menu">
+            <motion.div initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }} transition={{ type: "spring", damping: 28, stiffness: 320 }} className="fixed top-0 right-0 bottom-0 w-[85vw] max-w-[320px] z-[70] bg-card shadow-2xl flex flex-col lg:hidden pt-[env(safe-area-inset-top)]" role="dialog" aria-modal="true" aria-label="Navigation menu">
               <div className="flex items-center justify-between px-4 py-4 border-b border-border">
                 <span className="font-heading font-semibold text-foreground">Menu</span>
                 <button type="button" onClick={() => setMobileMenuOpen(false)} className="w-11 h-11 flex items-center justify-center rounded-full bg-muted" aria-label="Close menu">

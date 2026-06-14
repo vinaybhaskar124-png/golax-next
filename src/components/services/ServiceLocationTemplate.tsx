@@ -164,19 +164,19 @@ export default function ServiceLocationTemplate({ data }: ServiceLocationTemplat
       )}
 
       {/* Hero Section */}
-      <section className="hero-premium py-20 overflow-hidden lg:overflow-visible">
+      <section className="hero-premium py-20 overflow-hidden">
         <div className="hero-premium-orb hero-premium-orb-accent" aria-hidden />
         <div className="hero-premium-orb hero-premium-orb-primary" aria-hidden />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_420px] gap-10 items-start">
-              <div className="max-w-2xl">
+        <div className="container mx-auto px-4 relative z-10 min-w-0">
+          <div className="grid lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_420px] gap-10 items-start min-w-0">
+              <div className="max-w-2xl min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
               {/* Breadcrumb */}
-              <nav className="flex items-center gap-2 text-sm text-primary-foreground/70 mb-6">
+              <nav className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-primary-foreground/70 mb-6">
                 <Link href="/" className="hover:text-accent transition-colors">Home</Link>
                 <span>/</span>
                 <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
@@ -197,7 +197,7 @@ export default function ServiceLocationTemplate({ data }: ServiceLocationTemplat
                 </div>
               </div>
 
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-6">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-6 break-words">
                 {service.title} in{" "}
                 <strong className="text-accent font-bold not-italic">{locationString}</strong>
               </h1>

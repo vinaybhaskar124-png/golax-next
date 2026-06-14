@@ -244,12 +244,12 @@ export default function LocationPageTemplate({ location }: LocationPageTemplateP
       )}
 
       {/* Hero Section */}
-      <section className="hero-premium py-20 overflow-hidden lg:overflow-visible">
+      <section className="hero-premium py-20 overflow-hidden">
         <div className="hero-premium-orb hero-premium-orb-accent" aria-hidden />
         <div className="hero-premium-orb hero-premium-orb-primary" aria-hidden />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_420px] gap-10 items-start">
-              <div className="max-w-2xl">
+        <div className="container mx-auto px-4 relative z-10 min-w-0">
+          <div className="grid lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_420px] gap-10 items-start min-w-0">
+              <div className="max-w-2xl min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -266,7 +266,7 @@ export default function LocationPageTemplate({ location }: LocationPageTemplateP
                 <MapPin className="h-4 w-4" />
                 {fullLocation}
               </span>
-              <h1 className="heading-display text-4xl md:text-5xl text-primary-foreground mb-6">
+              <h1 className="heading-display text-3xl sm:text-4xl md:text-5xl text-primary-foreground mb-6 break-words">
                 Website Development Company in{" "}
                 <strong className="text-accent font-bold not-italic">{location.city}</strong>
               </h1>

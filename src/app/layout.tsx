@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-IN" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="min-h-screen antialiased">
+    <html lang="en-IN" className={`${inter.variable} ${poppins.variable} overflow-x-clip`}>
+      <body className="min-h-screen antialiased overflow-x-clip w-full">
         <Providers>{children}</Providers>
       </body>
     </html>

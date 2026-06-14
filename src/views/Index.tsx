@@ -141,7 +141,7 @@ export default function Index() {
               opacity: [0.1, 0.2, 0.1]
             }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute -top-40 -right-40 w-96 h-96 bg-accent/30 rounded-full blur-3xl"
+            className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-64 h-64 sm:w-96 sm:h-96 bg-accent/30 rounded-full blur-3xl"
           />
           <motion.div
             animate={{ 
@@ -149,18 +149,18 @@ export default function Index() {
               opacity: [0.1, 0.2, 0.1]
             }}
             transition={{ duration: 10, repeat: Infinity }}
-            className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent/20 rounded-full blur-3xl"
+            className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-64 h-64 sm:w-96 sm:h-96 bg-accent/20 rounded-full blur-3xl"
           />
         </div>
         
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 min-w-0">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center min-w-0">
             {/* Lead form first on mobile for conversions */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="w-full order-2 lg:order-2"
+              className="w-full min-w-0 order-2 lg:order-2"
             >
               <HeroLeadForm
                 context="Home — India & Global"
@@ -174,7 +174,7 @@ export default function Index() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="order-1 lg:order-1"
+              className="order-1 lg:order-1 min-w-0"
             >
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
@@ -318,7 +318,7 @@ export default function Index() {
       <PortfolioPreview projects={portfolioPreview} />
 
       {/* Why Choose Us */}
-      <section className="section-padding bg-card">
+      <section className="section-padding bg-card overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             <motion.div initial={{
@@ -365,9 +365,9 @@ export default function Index() {
             x: 0
           }} viewport={{
             once: true
-          }} className="relative">
+          }} className="relative overflow-hidden">
               <Image src={techPattern} alt="Technology innovation at Golax India" className="rounded-2xl shadow-2xl w-full h-auto" loading="lazy" />
-              <div className="absolute -bottom-4 left-4 right-4 sm:-bottom-6 sm:-left-6 sm:right-auto glass-card rounded-2xl p-4 sm:p-6">
+              <div className="absolute -bottom-4 left-4 right-4 sm:-bottom-6 sm:left-4 sm:right-auto sm:max-w-[220px] glass-card rounded-2xl p-4 sm:p-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-success flex items-center justify-center">
                     <Award className="h-6 w-6 text-success-foreground" />
@@ -446,7 +446,7 @@ export default function Index() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.08 }}
-                className="relative premium-card p-5 sm:p-8 bg-gradient-subtle hover:border-primary/30"
+                className="relative premium-card p-5 sm:p-8 bg-gradient-subtle hover:border-primary/30 overflow-hidden"
               >
                 <div className="absolute -top-4 -right-4 text-7xl font-heading font-bold text-primary/10 select-none">{p.step}</div>
                 <div className="relative">

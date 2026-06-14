@@ -155,7 +155,7 @@ export default function Careers() {
     <Layout>
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-hero overflow-hidden lg:overflow-visible">
+      <section className="relative py-20 bg-gradient-hero overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_420px] gap-10 items-start">
               <div className="max-w-2xl">

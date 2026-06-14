@@ -13,10 +13,10 @@ export default function Layout({ children }: LayoutProps) {
   const [ctaVisible, setCtaVisible] = useState(true);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-x-clip w-full max-w-full">
       <Header />
       <main
-        className={`flex-grow pt-[4.25rem] sm:pt-[4.75rem] md:pt-[136px] lg:pt-[156px] lg:pb-0 transition-[padding] duration-300 ${
+        className={`flex-grow min-w-0 w-full pt-[4.25rem] sm:pt-[4.75rem] md:pt-[136px] lg:pt-[156px] lg:pb-0 transition-[padding] duration-300 ${
           ctaVisible ? "pb-[4.5rem]" : "pb-3"
         }`}
       >

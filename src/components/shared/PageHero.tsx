@@ -37,7 +37,7 @@ export default function PageHero({
       <div className="hero-premium-orb hero-premium-orb-accent" aria-hidden />
       <div className="hero-premium-orb hero-premium-orb-primary" aria-hidden />
 
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 py-10 sm:py-14 md:py-20">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 py-10 sm:py-14 md:py-20 min-w-0">
         {centered ? (
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -60,7 +60,7 @@ export default function PageHero({
                 {badge}
               </span>
             )}
-            <h1 className="heading-display mb-4 text-[1.75rem] text-primary-foreground sm:mb-6 sm:text-4xl md:text-5xl">
+            <h1 className="heading-display mb-4 text-[1.75rem] text-primary-foreground sm:mb-6 sm:text-4xl md:text-5xl break-words">
               {title}
             </h1>
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-primary-foreground/80 sm:text-lg md:text-xl">
@@ -69,12 +69,12 @@ export default function PageHero({
             {actions && <div className="mt-8 flex flex-wrap justify-center gap-3">{actions}</div>}
           </motion.div>
         ) : (
-          <div className="grid items-start gap-8 lg:grid-cols-[1fr_400px] lg:items-center xl:grid-cols-[1fr_420px] lg:gap-10">
+          <div className="grid items-start gap-8 lg:grid-cols-[1fr_400px] lg:items-center xl:grid-cols-[1fr_420px] lg:gap-10 min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-2xl"
+              className="max-w-2xl min-w-0"
             >
               {backLink && (
                 <Link
@@ -91,7 +91,7 @@ export default function PageHero({
                   {badge}
                 </span>
               )}
-              <h1 className="heading-display mb-4 text-[1.75rem] text-primary-foreground sm:mb-6 sm:text-4xl md:text-5xl">
+              <h1 className="heading-display mb-4 text-[1.75rem] text-primary-foreground sm:mb-6 sm:text-4xl md:text-5xl break-words">
                 {title}
               </h1>
               <p className="mb-6 max-w-xl text-base leading-relaxed text-primary-foreground/80 sm:mb-8 sm:text-lg md:text-xl">
