@@ -32,6 +32,14 @@ export function buildMetadata({
     description,
     keywords,
     authors: [{ name: SITE_NAME }],
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+        { url: "/favicon.png", type: "image/png", sizes: "16x16" },
+      ],
+      apple: "/favicon.png",
+    },
     ...(googleVerification
       ? { verification: { google: googleVerification } }
       : {}),
