@@ -1512,7 +1512,7 @@ export default function BlogPost({ slug }: { slug: string }) {
                 <span className="text-primary-foreground/60 text-xs">{post.readTime}</span>
               </div>
 
-              <h1 className="heading-display text-3xl md:text-4xl lg:text-[2.75rem] text-primary-foreground mb-6">
+              <h1 className="heading-display text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-primary-foreground mb-5 sm:mb-6 break-words">
                 {post.title}
               </h1>
 
@@ -1563,20 +1563,20 @@ export default function BlogPost({ slug }: { slug: string }) {
       </section>
 
       {/* Article */}
-      <section className="relative py-10 md:py-14 bg-gradient-subtle">
+      <section className="relative py-8 sm:py-10 md:py-14 bg-gradient-subtle overflow-hidden">
         <div className="absolute inset-0 bg-mesh pointer-events-none opacity-60" />
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-[minmax(0,1fr)_300px] xl:grid-cols-[minmax(0,1fr)_320px] gap-8 xl:gap-12 items-start">
+        <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10 min-w-0">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[minmax(0,1fr)_300px] xl:grid-cols-[minmax(0,1fr)_320px] gap-6 sm:gap-8 xl:gap-12 items-start min-w-0">
             <motion.article
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15 }}
-              className="blog-article bg-card rounded-2xl border border-border/80 shadow-sm p-6 sm:p-8 md:p-10 lg:p-12"
+              className="blog-article min-w-0 w-full max-w-full overflow-hidden bg-card rounded-xl sm:rounded-2xl border border-border/80 shadow-sm p-4 sm:p-6 md:p-8 lg:p-12"
             >
               <BlogMarkdown content={post.content} />
             </motion.article>
 
-            <aside className="lg:sticky lg:top-28 space-y-5">
+            <aside className="min-w-0 w-full lg:sticky lg:top-28 space-y-4 sm:space-y-5">
               <TableOfContents content={post.content} />
 
               <div className="rounded-2xl border border-border/80 bg-card p-5 shadow-sm">

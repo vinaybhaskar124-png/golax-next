@@ -85,7 +85,7 @@ export default function TableOfContents({ content }: { content: string }) {
                 href={`#${it.id}`}
                 onClick={(e) => handleClick(e, it.id)}
                 className={[
-                  "block rounded-lg py-2 px-3 transition-all duration-200 leading-snug",
+                  "block rounded-lg py-2 px-3 transition-all duration-200 leading-snug break-words",
                   it.level === 3 ? "ml-3 text-[13px]" : "font-medium",
                   isActive
                     ? "bg-primary/10 text-primary shadow-sm"

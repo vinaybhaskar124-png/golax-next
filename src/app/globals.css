@@ -292,4 +292,17 @@
   .filter-pill-inactive {
     @apply bg-card text-muted-foreground border border-border/80 hover:border-primary/30 hover:text-foreground;
   }
+
+  /* Blog article body — prevent mobile overflow from tables, URLs, code */
+  .blog-prose {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .blog-prose :where(p, li, td, th, blockquote, a, h2, h3) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 }
